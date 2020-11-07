@@ -1,0 +1,387 @@
+*{
+	margin: 0;
+	padding: 0;
+
+	box-sizing: border-box;
+	font-family: poppins, sans-serif;
+
+	scroll-behavior: smooth;
+
+}
+
+html{
+	background-color: rgba(0, 0, 0, 0.945);
+	overflow-x: hidden;
+}
+
+html,body{
+	height:100%;
+
+	text-align: center;
+}
+
+
+
+:root{
+	--cor-cabecalho:#6283A3;
+
+	--cor-titulo:#bdbd6c;
+
+	--cor-conteudo:#eee;
+
+	--cor-form:#E0E0DE;
+}
+
+.clear{
+	clear:both;
+}
+
+.center{
+	width: 100%;
+	max-width: 1870px;
+
+	height: auto;
+	display: inline-block;
+
+	text-align: center;
+}
+
+.h2{
+	color:white;
+	font-size: 58px;
+	text-align: left;
+
+	display: block;
+
+	text-decoration: underline;
+
+	font-family: 'Montserrat', sans-serif;
+}
+
+.h5{
+	color:white;
+	font-family: 'Montserrat', sans-serif;
+	text-align: left;
+}
+
+.paragrafo{
+	color: white;
+	font-size: 40px;
+	margin-top: 30px;
+
+	text-align: left;
+
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.content:first-of-type{
+	height: auto;
+
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	
+	padding: 200px 150px 0 150px;
+
+	margin-top: 0px;
+
+	margin-bottom:180px;
+}
+
+.content{
+	padding: 110px 150px 0 150px;
+	margin-bottom:180px;
+}
+
+.escuro{
+	background-color: rgba(0, 0, 0, 0.897);
+	height: 1000px;
+}
+
+/* Fonte */
+
+@font-face{
+    font-family:poppins;
+    src:url('fonts/Poppins/Poppins-Regular.ttf');
+}
+
+@font-face{
+    font-family:poppins-semi;
+    src:url('fonts/Poppins/Poppins-SemiBold.ttf')
+}
+
+/* Formatação header */
+
+header{
+	width: 100%;
+	height: 1000px;
+
+	background-image: url('imgs/fundo.jpg');
+	background-position: center;
+	background-size: cover;
+
+	display: block;
+}
+
+/*Formatação Logo*/
+
+.logo{
+	position: absolute;
+	top:20px;
+	left: 110px;
+}
+
+.logo img{
+	width:280px;
+}
+
+/*Formatação Menu*/
+
+nav{
+	display: inline-block;
+
+	padding: 0 60px;
+
+	position: absolute;
+	top:27px;
+	right: 110px;
+}
+
+nav a{
+	text-decoration: none;
+	color: white;
+
+	padding: 10px 5px;
+	font-size: 1.4em;
+
+	transition:	0.5s; 
+}
+
+nav a:hover{
+	color: #e9e9e9ad;
+
+	border-radius: 15px;
+}
+
+ul{
+	list-style:none; 
+}
+
+ul li{
+	display: inline;
+	padding: 0 10px;
+}
+
+
+/*Formatação section*/
+
+.slogan{
+	height: auto;
+	width: 100%;
+
+	padding: 150px 0 0 0;
+}
+
+ .titulo > .texto-tit>  h1{
+font-size:81px;
+font-weight: bold;
+
+width: 100%;
+
+text-align: left;
+
+color:white;
+
+font-family: 'Montserrat', sans-serif;
+
+}
+
+.titulo .texto-tit p{
+	font-size:28.8px;
+	color:#C1C1C1;
+
+	font-weight: 600;
+
+	margin-top:10px;
+
+	font-family: 'Montserrat', sans-serif;
+
+	text-align: left;
+}
+
+.titulo .texto-tit span{
+	color:#6cb5fd;
+	font-family:'Montserrat', sans-serif;
+}
+
+/*Formatação ilustração*/
+
+.titulo .ilustracao{
+	margin-right: 100px;
+}
+.titulo .ilustracao img{
+	width: 680px;
+}
+
+/* Formatação div .texto-tit */
+.texto-tit{
+	width: 750px;
+
+	padding-left: 95px;
+
+}
+
+/*Formatação classe Título*/
+
+.titulo{
+	height: auto;
+	width: 100%;
+
+	/* padding: 100px 0 150px 50px; */
+
+	display: flex;
+	align-items: center;
+	justify-content: space-between ;
+
+
+}
+
+/*Formatacação sobre*/
+
+.content .texto{
+	width: 1100px;
+}
+
+.content .imagem-perfil img{
+	width: 300px;
+
+	border-radius: 50%;
+}
+
+/*Formatação serviços*/
+.tit-icones{
+	width: 100%;
+}
+
+.tit-icones .imgs-ser img{
+	width: 380px;
+	border-radius: 50px;
+
+	transition: 0.3s;
+
+	display: inline-block;
+}
+
+.tit-icones .imgs-ser{
+	display: inline-block;
+	width: 380px;
+
+	transform:translateX(-60px);
+
+	margin: 30px 100px 0 0;
+}
+
+.tit-icones .imgs-ser:nth-of-type(2){
+	width:380px;
+
+	margin: 30px 100px 0 0;
+	transform:translateX(-60px);
+}
+
+.tit-icones .imgs-ser a{
+	padding: 15px 15px;
+	background: rgb(89,210,101);
+	background: linear-gradient(180deg, rgba(89,210,101,1) 0%, rgb(32, 167, 52) 100%);
+
+	font-size:px;
+	
+	border-radius: 80px;
+
+	text-decoration: none;
+	color: white;
+
+	transition: 0.7s;
+
+}
+
+.tit-icones .imgs-ser a:hover{
+	box-shadow: 1px 1px 14px rgb(170, 170, 170);
+}
+
+.serviços{
+	text-align: center;
+}
+
+.content .icones{
+	display: block;
+}
+
+/*Formatação Portfólio*/
+
+.cases{
+	text-align: left;
+}
+
+.cases .astronauta{
+	width:400px;
+	height:180px;
+
+	display: inline-block;
+	margin-top: 70px;
+
+	cursor: pointer;
+}
+
+.cases .astronauta img{
+	width: 400px;
+
+	transition:0.5s;
+
+	position: relative;
+	left: 0;
+	transform:scale(1,1);
+}
+
+.cases p:nth-of-type(2){
+	color: white;
+	font-size: 18px;
+	font-weight: bold;
+	margin-top: 10px;
+
+	text-align: left;
+
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+/*Formatação Footer*/
+
+footer{
+	
+	background: var(--cor-cabecalho);
+
+	height: 78px;
+	width: 100%;	
+
+}
+
+footer .copy{
+	
+	text-align: center;
+}
+ 
+.email{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.email p{
+	padding-left: 8px;
+	padding-top: 3px;
+}
+
+.email a{
+	color:black;
+	text-decoration: none;
+}
